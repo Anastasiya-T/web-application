@@ -1,0 +1,168 @@
+body {
+	background-color: SlateGray;
+	margin: 0 auto;
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:link, a:visited {
+	text-decoration:none;
+	color: black;
+}
+
+a:hover {
+	color: red;
+}
+
+/**** Панель меню */
+	.class_menu_panel{
+		padding: 15px 0;
+		background-color: white;
+		/* background-image: url(images/menu_back.jpg); */
+		clear: both;
+		position: relative;
+		height: 20px;
+	}
+
+	.class_menu_panel ul {
+		margin: 0;
+		display: block;
+	}
+
+	.class_menu_panel li {
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	.class_menu_panel li #currentSection {
+		border-bottom: solid SlateGray 4px;
+	}
+/* Панель меню ****/
+
+/**** Панель маленького меню */
+.class_hamb_menu {
+	float: right;
+	margin-right: 8px;
+	height: 20px;
+	display: none;
+	cursor: pointer;
+}
+
+.class_hamb_button {
+	width: 30px;
+	height: 30px;
+	background-color: SlateGray;
+	position: relative;
+}
+/* Панель маленького меню ****/
+
+.content_widget {
+	background-color: white;
+	margin: 8px;
+	padding: 15px;
+	position: relative;
+	min-height: 400px;
+}
+
+.class_columns_wrapper {
+	width: 25%;
+	float: left;
+	overflow: hidden;
+	margin-bottom: 2px;
+}
+
+.class_columns_wrapper h1 {
+	margin: 0;
+	line-height: 28px;
+}
+
+.class_main_wrapper {
+	width: 1300px;
+	margin: 0px auto;
+	clear: both;
+}
+
+.article_wrapper {
+	width: 75%;
+	float: left;
+}
+
+.sidebar_wrapper {
+	width: 25%;
+	float: left;
+}
+
+.textbox {
+	border: none;
+	border: ridge 1px paleturquoise;
+	border-radius: 4px;
+	padding: 4px;
+	right: 10px;
+	width: 60%;
+}
+
+.error {
+	color: red;
+	margin-left: 20px;
+}
+
+.button {
+	display: inline;
+	padding: 10px;
+	padding-bottom: 14px;
+	background-color: white;
+	box-shadow: SlateGray 0 0 15px inset;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+@media screen and (max-width: 1320px) {
+	.class_main_wrapper {
+		width: 900px;
+	}
+
+	.article_wrapper {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+
+	.sidebar_wrapper {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+}
+
+@media screen and (max-width: 940px) {
+	.class_columns_wrapper {
+		width: 100%;
+		float: none;
+	}
+
+	.class_main_wrapper {
+		width: 100%;
+	}
+
+	.class_hamb_menu {
+		display: block;
+	}
+
+	.class_menu_panel ul {
+		top: 100%;
+		width: 100%;
+		display: none;
+		z-index: 1;
+		position: absolute;
+		right: 0;
+	}
+
+	.class_menu_panel ul li {
+		display: list-item;
+		list-style: none;
+		background-color: white;
+	}
+
+	.class_menu_panel li#currentSection {
+		border: solid SlateGray 2px;
+	}
+}
