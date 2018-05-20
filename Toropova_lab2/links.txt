@@ -1,0 +1,2 @@
+https://ide.c9.io/toronasty/lab2
+https://lab2-toronasty.c9users.io/phpmyadmin/
